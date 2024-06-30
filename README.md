@@ -23,22 +23,6 @@ A sleek, minimalist blog application showcasing CRUD functionality with a modern
 4. Launch the server
 5. Open your browser and visit `http://localhost:3000`. Welcome to your new blog!
 
-## 🌈 Project Structure
-myBlog/
-│
-├── public/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── server.js
-├── posts.json
-│
-├── package.json
-├── package-lock.json
-│
-├── .gitignore
-└── README.md
 
 ## 🎨 Customization
 
