@@ -16,10 +16,11 @@ app.get('/api/posts', (req, res) => {
 });
 
 
-//새포스트 만들기
+// 새 포스트 만들기
 app.post('/api/posts', (req, res) => {
+  const newId = (posts.length + 1).toString();
   const newPost = {
-    id: Date.now().toString(),
+    id: newId,
     title: req.body.title,
     content: req.body.content
   };
