@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myBlog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Simple Blog</h1>
-    </header>
-    <main>
-        <section id="post-form">
-            <h2>Create a New Post</h2>
-            <form id="create-post-form">
-                <input type="text" id="post-title" required placeholder="Title">
-                <textarea id="post-content" required placeholder="Content"></textarea>
-                <button type="submit">Create Post</button>
-            </form>
-        </section>
-        <section id="post-list">
-            <!-- Posts will be dynamically added here -->
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>myBlog</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>myBlog</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="home-link">Home</a></li>
+                        <li><a href="#" id="new-post-link">New Post</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section id="post-form" class="hidden">
+                <h2>Create a New Post</h2>
+                <form id="create-post-form">
+                    <input type="text" id="post-title" required placeholder="Title">
+                    <textarea id="post-content" required placeholder="Content"></textarea>
+                    <button type="submit">Publish Post</button>
+                </form>
+            </section>
+            <section id="post-list">
+                <!-- Posts will be dynamically added here -->
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 myBlog. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
